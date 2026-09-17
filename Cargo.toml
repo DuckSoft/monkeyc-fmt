@@ -1,0 +1,13 @@
+[package]
+name = "monkeyc-fmt"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "A syntax-preserving formatter for Garmin Monkey C"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+pretty = "0.12"
+tempfile = "3"
+tree-sitter = "0.25"
+tree-sitter-monkeyc = { git = "https://github.com/DuckSoft/tree-sitter-monkeyc", rev = "ec98189fe479d52b8ba90a68d573f437574e31dd" }
