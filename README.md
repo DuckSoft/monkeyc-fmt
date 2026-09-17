@@ -4,9 +4,17 @@
 
 Comments, literal contents, parentheses, and punctuation are preserved. The Garmin Connect IQ SDK is not required.
 
-## Install from source
+## Installation
 
-Building requires the stable Rust toolchain, Git, and a native C compiler/toolchain for the Tree-sitter parser. The repository pins its Monkey C parser dependency to a Git revision, so Cargo also needs network access when that dependency is not already cached.
+Building requires the stable Rust toolchain and a native C compiler/toolchain for the Tree-sitter parser.
+
+Install from crates.io:
+
+```console
+cargo install --locked monkeyc-fmt
+```
+
+Alternatively, clone and install from source (requires Git):
 
 ```console
 git clone https://github.com/DuckSoft/monkeyc-fmt.git
